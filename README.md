@@ -23,8 +23,8 @@ Basic Syntax:
 
 %% Running Erlang files in shell
 %% running helloworld.erl program
-    Type erl in the terminal
+1) Type erl in the terminal
 %% Erlang shell will open, then ->
-    c(helloworld).          ## compile the module
-    helloworld:start().     ## caling start method in helloworld module
+2) c(helloworld).          ## compile the module
+3) helloworld:start().     ## caling start method in helloworld module
 
