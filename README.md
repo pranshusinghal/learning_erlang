@@ -96,10 +96,10 @@ len([1,2,3,4]) = len([1 | [2,3,4])
 
 %% recursively calculating the factorial of 4
 tail_fac(4)    = tail_fac(4,1)
-tail_fac(4,1)  = tail_fac(4-1, 4*1)
-tail_fac(3,4)  = tail_fac(3-1, 3*4)
-tail_fac(2,12) = tail_fac(2-1, 2*12)
-tail_fac(1,24) = tail_fac(1-1, 1*24)
+tail_fac(4,1)  = tail_fac(4-1, 4x1)
+tail_fac(3,4)  = tail_fac(3-1, 3x4)
+tail_fac(2,12) = tail_fac(2-1, 2x12)
+tail_fac(1,24) = tail_fac(1-1, 1x24)
 tail_fac(0,24) = 24
 
 ## If Statement
@@ -112,16 +112,16 @@ Syntax:
 6) end.
 
 ## Multiple Expression
-1)if
-2)condition1->
-3)  statement#1;
-4)condition2->
-5)  statement#2;
-6)conditionN->
-7)  statement#N;
-8)true->
-9)  defaultstatement
-10)end.  
+1)  if
+2)  condition1->
+3)    statement#1;
+4)  condition2->
+5)    statement#2;
+6)  conditionN->
+7)    statement#N;
+8)  true->
+9)    defaultstatement
+10) end.  
 
 ## File Handling in Erlang
 File library contains the basic methods for reading the contents of a file
