@@ -1,0 +1,4 @@
+[{<<"erl_csv_generator">>,
+  {git,"https://github.com/manastech/erl_csv_generator.git",
+       {ref,"3d15e905560c41bd227f83227f987c0fea1b831f"}},
+  0}].

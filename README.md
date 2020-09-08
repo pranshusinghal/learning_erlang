@@ -154,3 +154,27 @@ Mode -> Mode in which the file needs to be opened
     Syntax: is_file(filename)
 8)  is_dir
     Syntax: is_dir(dirname)
+
+
+## Building Your First Erlang App Using Rebar3
+https://medium.com/erlang-central/building-your-first-erlang-app-using-rebar3-25f40b109aad#:~:text=Start%20with%20the%20command%20rebar3,%2C%20plugin%2C%20escript%2C%20cmake.
+
+1)  curl -O https://s3.amazonaws.com/rebar3/rebar3
+2)  chmod +x rebar3
+    export PATH=$PATH:/home/pranshu.s/workspace/learning_erlang
+
+## Your first Erlang app
+1)  Start with the command rebar3 new to generate a new project from the built-in template called app. In this example we are creating a project called myapp. Other available templates are: release, lib, plugin, escript, cmake.
+
+2)  rebar3 new app myapp
+3)  cd myapp        ## Switching to this directory is important
+
+4)  Add erl_csv_generator library in rebar.config file. Follow this link for csv_generator..
+    %% https://github.com/manastech/erl_csv_generator
+5)  Make a new erlang file -> (csv_generator.erl) and add code to generate a csv file.
+
+6)  rebar3 shell        ## this command will compile myapp
+    %% ===> Booted myapp        ## this message appears on shell
+
+7) Call the csv_generator start() method. Note there is no need to compile the csv_generator module as myapp has already been compiled
+8)  csv_generator:start().      ## this command will generate a test.csv file 
