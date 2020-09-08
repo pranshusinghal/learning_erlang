@@ -109,4 +109,48 @@ Syntax:
 3)  statement#1;    %% true statement
 4) true ->
 5)  statement#2     %% false statement
-6) end
+6) end.
+
+## Multiple Expression
+1)if
+2)condition1->
+3)  statement#1;
+4)condition2->
+5)  statement#2;
+6)conditionN->
+7)  statement#N;
+8)true->
+9)  defaultstatement
+10)end.  
+
+## File Handling in Erlang
+File library contains the basic methods for reading the contents of a file
+
+Syntax:
+1) Opening a file - open(File, Mode)
+2) Reading a file - read(FileHandler, NumberOfBytes)
+
+File -> Location of file that needs to be opened
+Mode -> Mode in which the file needs to be opened
+
+3) Modes available:
+    Read, Write, Append, Exclusive, File Handler, NumberofByte
+
+
+## Methods of File Operation
+1)  file_read
+    Syntax: file_read(filename)
+2)  write
+    Syntax: write(FileHandler, text)
+3)  copy
+    Syntax: copy(source, destination)
+4)  delete
+    Syntax: delete(filename)
+5)  rename
+    Syntax: rename(oldname, newname)
+6)  filesize
+    Syntax: filesize(filename)
+7)  is_file
+    Syntax: is_file(filename)
+8)  is_dir
+    Syntax: is_dir(dirname)
