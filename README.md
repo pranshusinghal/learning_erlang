@@ -102,3 +102,11 @@ tail_fac(2,12) = tail_fac(2-1, 2*12)
 tail_fac(1,24) = tail_fac(1-1, 1*24)
 tail_fac(0,24) = 24
 
+## If Statement
+Syntax:
+1) if
+2) condition ->
+3)  statement#1;    %% true statement
+4) true ->
+5)  statement#2     %% false statement
+6) end
